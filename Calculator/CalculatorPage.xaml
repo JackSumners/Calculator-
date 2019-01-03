@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Calculator"
+    x:Class="Calculator.CalculatorPage"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true">
+    
+    
+    <Grid
+
+        x:Name="Grid"
+        BackgroundColor="Black"
+        RowSpacing="5"
+        ColumnSpacing="5">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+          
+        
+
+        <StackLayout
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Orientation="Horizontal"
+            BackgroundColor="Black">
+            <Label
+                x:Name="EquationBar"
+                Text=" "
+                FontSize="50"
+                TextColor="White"
+                TranslationX="50"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"/>
+         </StackLayout>
+
+        <Button
+            x:Name="Number7"
+            Grid.Row="1"
+            Grid.Column="0"
+            BackgroundColor="White"
+            Text="7"
+            FontSize="20"
+            TextColor="Black"
+            Clicked="Handle_7"/>
+          
+          <Button 
+                x:Name="Number8"
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="White"
+                Text="8"
+                FontSize="20"
+                TextColor="Black"
+                Clicked="Handle_8"/>
+
+        
+          <Button 
+                x:Name="Number9"
+                Grid.Row="1"
+                Grid.Column="2"
+                BackgroundColor="White"
+                Text="9"
+                FontSize="20"
+                TextColor="Black"
+                Clicked="Handle_9"/>
+
+        
+          <Button 
+                x:Name="Divide"
+                Grid.Row="1"
+                Grid.Column="3"
+                BackgroundColor="Maroon"
+                Text="/"
+                 FontSize="20"
+                TextColor="White"
+                Clicked="Handle_Divide"/>
+
+          <Button 
+                x:Name="Number4"
+                Grid.Row="2"
+                Grid.Column="0"
+                BackgroundColor="White"
+                Text="4"
+                FontSize="20"
+                TextColor="Black"
+                Clicked="Handle_4"/>
+
+          <Button 
+                x:Name="Number5"
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="White"
+                Text="5"
+                FontSize="20"
+                TextColor="Black"
+                Clicked="Handle_5"/>
+
+          <Button 
+                x:Name="Number6"
+                Grid.Row="2"
+                Grid.Column="2"
+                BackgroundColor="White"
+                Text="6"
+                FontSize="20"
+                TextColor="Black"
+                Clicked="Handle_6"/>
+
+          <Button 
+                x:Name="Multiply"
+                Grid.Row="2"
+                Grid.Column="3"
+                BackgroundColor="Maroon"
+                Text="X"
+                FontSize="20"
+                TextColor="White"
+                Clicked="Handle_Multiply"/>
+
+          <Button 
+                x:Name="Number1"
+                Grid.Row="3"
+                Grid.Column="0"
+                BackgroundColor="White"
+                Text="1"
+                FontSize="20"
+                TextColor="Black"
+                Clicked="Handle_1"/>
+
+          <Button 
+                x:Name="Number2"
+                Grid.Row="3"
+                Grid.Column="1"
+                BackgroundColor="White"
+                Text="2"
+                FontSize="20"
+                TextColor="Black"
+                Clicked="Handle_2"/>
+
+          <Button 
+                x:Name="Number3"
+                Grid.Row="3"
+                Grid.Column="2"
+                BackgroundColor="White"
+                Text="3"
+                FontSize="20"
+                TextColor="Black"
+                Clicked="Handle_3"/>
+
+           <Button 
+                x:Name="Subtract"
+                Grid.Row="3"
+                Grid.Column="3"
+                BackgroundColor="Maroon"
+                Text="-"
+                FontSize="20"
+                TextColor="White"
+                Clicked="Handle_Subtract"/>
+
+
+        
+            
+            <Button
+                 Grid.Row="4"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="3"
+                 BackgroundColor="White"
+                x:Name="Number0"
+                Text="0"
+                FontSize="20"
+                TextColor="Black"
+                VerticalOptions="Center"
+                
+                Clicked="Handle_0"/>
+           
+
+           <Button 
+                x:Name="Addition"
+                Grid.Row="4"
+                Grid.Column="3"
+                BackgroundColor="Maroon"
+                Text="+"
+                FontSize="20"
+                TextColor="White"
+                Clicked="Handle_Add"/>
+
+           <Button 
+                x:Name="Clear"
+                Grid.Row="5"
+                Grid.Column="0"
+                BackgroundColor="Gray"
+                Text="C"
+                FontSize="20"
+                TextColor="White"
+                Clicked="Handle_Clear"/>
+
+          
+            <Button
+                 Grid.Row="5"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+               
+                BackgroundColor="Maroon"
+                x:Name="Equal"
+                Text="="
+                FontSize="20"
+                TextColor="White"
+                VerticalOptions="Center"
+                
+                Clicked="Handle_Equal"/>
+           
+        
+
+    </Grid>
+
+
+    
+</ContentPage>
